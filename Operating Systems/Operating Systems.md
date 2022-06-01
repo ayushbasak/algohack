@@ -34,7 +34,20 @@ ___
 		- LOOK
 		- C SCAN
 		- C LOOK
+-  [ ] File Management | Security 
 
 
+___
+### Introduction
+![](https://www.tutorialspoint.com/operating_system/images/conceptual_view.jpg)
 
-		
+### Types of OS
+- Batch OS
+- Multi Programmed
+	- Non Preemptive
+	- 
+- Multi Tasking
+- Real Time OS
+- Distributed
+- Clustered
+- Time Sharing
