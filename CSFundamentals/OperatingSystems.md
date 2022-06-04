@@ -198,3 +198,14 @@ Advantages:
 Disadvantages:
 - difficult to decide which processes are given higher priority
 - Low priority process is lost if PC crashes
+
+
+___
+
+### Process Synchronization Algorithms
+1. Co-operative: one process affects execution of another process
+2. Independent: one process does not affect execution of another process
+
+__Race condtition__: when two or more processes are accessing the same resource.
+
+#### Producer Consumer Problem
