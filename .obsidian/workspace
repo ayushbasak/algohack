@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Graphs.md",
+            "file": "Operating Systems/Operating Systems.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "8a3f46c26d81e9bc",
+        "id": "6996255dae5dc60a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Graphs.md",
+            "file": "Operating Systems/Operating Systems.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Graphs.md",
+                "file": "Operating Systems/Operating Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +99,9 @@
   },
   "active": "518f7972b9135bd7",
   "lastOpenFiles": [
-    "Graphs.md",
-    "Operating Systems/Operating Systems.md"
+    "Operating Systems/Operating Systems.md",
+    "Arrays 2D.md",
+    "Pasted image 20220604135147.png",
+    "Graphs.md"
   ]
 }
