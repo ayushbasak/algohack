@@ -53,7 +53,7 @@ ___
 - Time Sharing
 
 #### Process States
-![[Pasted image 20220604132958.png]]
+![](https://www.tutorialspoint.com/assets/questions/media/60253/process%20states.jpg)
 - Long Time Scheduler: New to Ready state
 - Short Term Scheduler: Ready to Running
 - Running to Wait: IO / Event wait request
@@ -84,7 +84,7 @@ main () {
 Total Processes in nested fork(): __2<sup>n</sup> - 1__
 
 #### User Mode | Kernel Mode
-![[Pasted image 20220604135407.png]]
+![](https://www.tutorialspoint.com/assets/questions/media/11194/User%20Mode%20vs%20Kernel%20Mode.PNG)
 
 __Kernel Mode__
 - program has unrestricted access to system resources
@@ -99,7 +99,7 @@ __User Mode__
 - 1 bit user mode
 
 #### Process | Threads
-![[Pasted image 20220604140024.png]]
+![](https://static.javatpoint.com/difference/images/process-vs-thread3.png)
 
 | Process | Threads |
 | --- | --- |
