@@ -6,7 +6,7 @@ ___
 - [.] Types of OS
 - [.] Process States
 - [.] User Mode / Kernel Mdoe
-- [ ] Process Scheduling Algos
+- [.] Process Scheduling Algos
 	- FCFS
 	- SJF
 	- SRJF
@@ -122,3 +122,79 @@ __User Mode__
 | dependent threads | independent thread |
 
 ___
+
+### Process Scheduling Algorithms
+- Pre-emptive
+	- SRTF (Shortest Remaining Time First)
+	- Round Robin
+	- Priority Based
+- Non Pre-emptive
+	- FCFS (First Come First Serve)
+	- SJF (Shortest Job First)
+	- Highest Response Ratio Next (HRRN)
+	- Multilevel Queue
+
+__Pre-emptive__: Process switching from ready state to running state.
+__Non Pre-emptive__: Process switching only when one process terminates
+
+__Arrival Time__: point of time when process enters ready queue.
+
+__Burst Time__: Time required for process to execute.
+
+__Completion Time__: point of time when process completes.
+
+__Turnaround Time__: Completion Time - Arrival Time
+
+__Waiting Time__: Turn Around Time - Burst Time
+
+__Response Time__: Point of time when process get CPU access for the first time - Arrival Time
+
+
+#### First Come First Serve (FCFS)
+Advantages
+- Non Prem-emptive
+- easy to implement
+
+Disadvantages:
+- Inefficient | High waiting time
+- Non pre-emptive algorithm runs till completion 
+
+#### Shortest Job First (SJF)
+Advantages:
+- __minimum average waiting time among all scheduling algorithms__
+- Non Pre-emptive
+- Greedy Algorithm
+
+Disadvantages:
+- Can cause starvation
+
+#### Shortest Remaining Time First (SRTF)
+Advantages:
+- pre-emptive version of SJF
+- faster than SJF
+
+Disadvantages:
+- context switching is more
+
+#### Round Robin
+Time Quantum: period of time of which process is allowed to run in pre-emptive method
+
+Advantages:
+- pre-emptive
+- implementable in real world [does not depend on burst time]
+- no starvation
+- all jobs get fair allocation of CPU
+
+Disadvantages:
+- higher time quantum -> higher response time
+- Lower time quantum -> high context switching
+
+
+#### Priority Scheduling
+Advantages:
+-	low number -> higher priority
+-	for same priority, FCFS is followed
+
+Disadvantages:
+- difficult to decide which processes are given higher priority
+- Low priority process is lost if PC crashes
