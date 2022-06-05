@@ -26,14 +26,14 @@ ___
 	- Variable Size Paritioning
 	- Paging
 	- Virtual Memory | Page Fault
-- [ ] Disk Management
-	- Disk Scheduling Algorithms
-		- FCFS
-		- SSTF
-		- SCAN
-		- LOOK
-		- C SCAN
-		- C LOOK
+- [.] File System
+- [.] Disk Scheduling Algorithms
+	- FCFS
+	- SSTF
+	- SCAN
+	- LOOK
+	- C SCAN
+	- C LOOK
 -  [ ] File Management | Security 
 
 
@@ -214,6 +214,38 @@ __Race condtition__: when two or more processes are accessing the same resource.
 
 ___
 
+### File System
+File Allocation Methods
+
+#### Continous allocation
+Advantages:
+- easy to implement
+- excellent read performance
+
+Disadvantages:
+- disk will be fragmented (external fragmentation)
+- difficult to grow file
+
+#### Linked Allocation
+Advantages:
+- no external fragmentation
+- changeable file size possible
+
+Disadvantages:
+- overhead of maintaining pointer in very disk block
+- if pointer of any block is lost, file becomes truncated
+- only sequential access of file is possible
+
+#### Indexed Allocation
+Advantages:
+- direct access possible
+- no external fragmentation
+
+Disadvantages:
+- overhead of pointer
+- multilevel index
+___
+
 ### Disk Scheduling Algorithms
 Hark Disk Architechture
 
@@ -266,4 +298,4 @@ Disadvantages:
 #### CSCAN and CLOOK
 - circular scan, look
 - return to 0, do not scan when returning
-
+___
