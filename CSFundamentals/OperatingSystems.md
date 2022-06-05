@@ -232,14 +232,14 @@ __Transfer Time__: Data to be transfered / Transfer Rate
 
 __Transfer Rate__: # of heads x capacity of one track x # of rotations in one second
 
-#### First Come First Serve
+#### First Come First Serve (FCFS)
 Advantages:
 - every request gets  fair chance
 
 Disadvantages:
 - inefficient, very high seek time
 
-#### Shortest Seek Time First
+#### Shortest Seek Time First (SSTF)
 Advantages:
 - Average Response Time decreases
 - Throughput increases
@@ -248,3 +248,22 @@ Disadvantages:
 - Overhead to calculate seek time 
 - can cause starvation
 - high variance of seek time
+
+#### SCAN
+go in one direction -> till the very last
+
+Advantages:
+- No starvation
+- better than FCFS
+
+Disadvantages:
+- Not fair, as recently visited positions by head have longest waiting time
+
+#### LOOK
+- move to larger value
+- same as scan, except head does not move to the very last
+
+#### CSCAN and CLOOK
+- circular scan, look
+- return to 0, do not scan when returning
+
