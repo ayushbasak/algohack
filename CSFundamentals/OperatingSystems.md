@@ -7,13 +7,13 @@ ___
 - [.] Process States
 - [.] User Mode / Kernel Mdoe
 - [.] Process Scheduling Algos
-	- FCFS
-	- SJF
-	- SRJF
-	- RR
-	- Pre-emptive Priority Scheduling
+	- [.] FCFS
+	- [.] SJF
+	- [.] SRJF
+	- [.] RR
+	- [.] Pre-emptive Priority Scheduling
 - [ ] Process Synchronization
-	- Producer Consumer Problem
+	- [.] Producer Consumer Problem
 	- Printer Spooler Problem
 	- Critical Section Problem
 	- Semaphores
@@ -39,7 +39,7 @@ ___
 
 ___
 ### Introduction
-![](https://www.tutorialspoint.com/operating_system/images/conceptual_view.jpg)
+<img src="https://www.tutorialspoint.com/operating_system/images/conceptual_view.jpg" width="400"></img>
 
 ### Types of OS
 - Batch OS
@@ -53,7 +53,7 @@ ___
 - Time Sharing
 
 ### Process States
-![](https://www.tutorialspoint.com/assets/questions/media/60253/process%20states.jpg)
+<img src="https://www.tutorialspoint.com/assets/questions/media/60253/process%20states.jpg" width="400"></img>
 - Long Time Scheduler: New to Ready state
 - Short Term Scheduler: Ready to Running
 - Running to Wait: IO / Event wait request
@@ -84,7 +84,7 @@ main () {
 Total Processes in nested fork(): __2<sup>n</sup> - 1__
 
 ### User Mode | Kernel Mode
-![](https://www.tutorialspoint.com/assets/questions/media/11194/User%20Mode%20vs%20Kernel%20Mode.PNG)
+<img src="https://www.tutorialspoint.com/assets/questions/media/11194/User%20Mode%20vs%20Kernel%20Mode.PNG" width="400"></img>
 
 __Kernel Mode__
 - program has unrestricted access to system resources
@@ -99,7 +99,7 @@ __User Mode__
 - 1 bit user mode
 
 #### Process | Threads
-![](https://static.javatpoint.com/difference/images/process-vs-thread3.png)
+<img src="https://static.javatpoint.com/difference/images/process-vs-thread3.png" width="400"></img>
 
 | Process | Threads |
 | --- | --- |
@@ -209,3 +209,42 @@ ___
 __Race condtition__: when two or more processes are accessing the same resource.
 
 #### Producer Consumer Problem
+- producer creates data and stores in shared buffer
+- consumer consumes data from shared buffer
+
+___
+
+### Disk Scheduling Algorithms
+Hark Disk Architechture
+
+<img src="https://static.studytonight.com/operating-system/images/secondary-storage-1.png" width="400"></img>
+
+__Platters -> Surfce -> Tracks -> Sectors -> Data__
+
+Disk Access Times:
+__Seek Time__: time taken by R/W head to reach desired track
+
+__Rotation Time__: time taken for one full rotation
+
+__Rotational Latency__: Time taked to reach desired sector
+
+__Transfer Time__: Data to be transfered / Transfer Rate
+
+__Transfer Rate__: # of heads x capacity of one track x # of rotations in one second
+
+#### First Come First Serve
+Advantages:
+- every request gets  fair chance
+
+Disadvantages:
+- inefficient, very high seek time
+
+#### Shortest Seek Time First
+Advantages:
+- Average Response Time decreases
+- Throughput increases
+
+Disadvantages:
+- Overhead to calculate seek time 
+- can cause starvation
+- high variance of seek time
