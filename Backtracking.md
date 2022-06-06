@@ -19,3 +19,15 @@ choose -> explore -> unchoose
 - in the validate function,
 	- check if n<sup>th</sup> queen is valid
 
+### Subsets
+- include every subset created in result vector
+- At one position in list iteration
+	- take this element and recurse
+	- remove this element and iterate
+
+### Permutations
+- for every position, check if element is already in temp list, ignore that element
+- otherwise push it in temp list
+- recurse to next position
+- remove element from temp list
+- when temp size == n, add to result vector
